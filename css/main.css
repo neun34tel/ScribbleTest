@@ -1,3 +1,18 @@
-body {
-  text-align : center;
+@charset "UTF-8";
+
+.content {
+  /*border : 1px solid Black;*/
+  margin-bottom : 50px;
+}
+
+.content__image {
+  display : block;
+}
+
+.content__image--centered {
+  margin : auto;
+}
+
+.content__likes {
+  text-align : right;
 }
