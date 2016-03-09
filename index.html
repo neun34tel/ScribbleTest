@@ -4,21 +4,23 @@
         <meta charset="UTF-8">
         <!-- Bootstrap CSS -->
         <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
-
         <title>Scribble Test</title>
     </head>
     <body class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h1>Headline</h1>
+            <div class="col-xs-12 headerBar">
+                <h1>Our customers</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div id="content"></div>
+                <!-- Used for rendering the Views -->
+                <div id="js-content"></div>
             </div>
         </div>
+        <!-- Main entry point in out application by require.js -->
         <script data-main="js/main" type="text/javascript" src="bower_components/requirejs/require.js"></script>
     </body>
 </html>

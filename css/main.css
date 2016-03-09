@@ -1,18 +1,58 @@
 @charset "UTF-8";
 
+/* HEADER */
+.headerBar {
+  margin-bottom : 25px;
+  padding-left : 55px;
+}
+
+.btn--bigMargin {
+  margin : 55px auto;
+}
+
+/* CONTENT */
 .content {
-  /*border : 1px solid Black;*/
+  margin-left : auto;
+  margin-right : auto;
   margin-bottom : 50px;
+  max-width : 370px;
 }
 
 .content__image {
   display : block;
+  margin-bottom : 10px;
 }
 
 .content__image--centered {
-  margin : auto;
+  margin-left : auto;
+  margin-right : auto;
 }
 
 .content__likes {
   text-align : right;
+}
+
+.content__likes:hover {
+  cursor : pointer;
+}
+
+.content__likes:hover .glyphicon {
+  font-weight : bold;
+}
+
+/*.content__likes:hover .glyphicon-heart-empty:before {*/
+  /*content : '\e005'*/
+/*}*/
+
+/*.content__likes:hover .glyphicon-heart:before {*/
+  /*content : '\e143'*/
+/*}*/
+
+.userInfo {
+  margin-top : 10px;
+  margin-bottom : 30px;
+}
+
+.userInfo__value {
+  margin-left : 10px;
 }
