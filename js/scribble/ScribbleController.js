@@ -31,17 +31,17 @@ define( [
          * @returns {Array} - array of Backbone Models
          */
         generateMockData : function ( amount ) {
-            var amount = amount || 6; // If no amount is given, generate 6 new Backbone Models
+            var amount     = amount || 6; // If no amount is given, generate 6 new Backbone Models
             var modelArray = [];
 
             // Loop to create each Backbone Model
             for ( var i = 1; i <= amount; i++ ) {
                 var user = chance.first() + ' ' + chance.last();
                 modelArray.push( new ScribbleModel( {
-                    img       : 'http://dummyimage.com/320x320/CCC/&text=' + user,
-                    label     : chance.word(),
-                    likes     : Math.floor( Math.random() * 1000 + 1 ),
-                    userName  : user
+                    img      : 'http://dummyimage.com/320x320/CCC/&text=' + user,
+                    label    : chance.word(),
+                    likes    : Math.floor( Math.random() * 1000 + 1 ),
+                    userName : user
                 } ).bind( this ) );
             }
 
